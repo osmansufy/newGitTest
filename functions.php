@@ -44,7 +44,9 @@ function piklist_theme_setting_pages($pages)
 
     return $pages;
 }
+
 add_filter('piklist_admin_pages', 'piklist_theme_setting_pages');
+//Remove_post support to wordpress
 function my_custom_init()
 {
     remove_post_type_support('post', 'custom-fields');
